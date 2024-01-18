@@ -1,4 +1,6 @@
 # Kino-laika-nolasītājs
+!!Svarīgi - programma nestrādās, ja to pārbaudīsit pēc aptuveni pulksten 22.00, jo tā atver mājaslapas daļu, kas atbilst dienai, kurā programmu palaidiet.!!
+
 Programma, kura nolasa šodienas Apollo Kino filmu grafiku, pēc tam tos izvada grafiskajā saskarnē, kurā var izvēlēties kurā laika periodā vēlētos apmeklēt kino
 
 ## Programmas uzdevums
