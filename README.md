@@ -11,16 +11,20 @@ Kad visa nepieciešamā informācija nolasīta, programma aizver pārlūku, atve
 Kad izvēlēts laika periods, piespiežot pogu "Rādīt filmas" atvērsies jauns teksta logs, kurš satur informāciju par visām filmām, kuras rādīs iepriekš izvēlētajā laika sprīdī.
 
 ## Izmantotās bibliotēkas
-tkinter - viena no populārākajām python grafiskajām saskarnēm. Izmantoju lai programmas funkcionalitāti būtu vieglāk un uzskatāmāk izmantot (nav jāizmanto terminālis)
+* tkinter - viena no populārākajām python grafiskajām saskarnēm. Izmantoju lai programmas funkcionalitāti būtu vieglāk un uzskatāmāk izmantot (nav jāizmanto terminālis)
 
-selenium - bibliotēka, kas ļauj iegūt un aizsūtīt informāciju no mājaslapas.
+* selenium - bibliotēka, kas ļauj iegūt un aizsūtīt informāciju no mājaslapas.
 
-selenium By - selenium paplašinājums, kuru izmantoju funkcijās, lai atrastu specifiskus mājaslapas elementus (piemēram dažādus logus, tekstu).
+* selenium By - selenium paplašinājums, kuru izmantoju funkcijās, lai atrastu specifiskus mājaslapas elementus (piemēram dažādus logus, tekstu).
 
-selenium "WebDriverWait" un "expected_conditions" - šie paplašinājumi abi nepieciešami priekš vienas funkcionalitātes: 
+* selenium "WebDriverWait" un "expected_conditions" - šie paplašinājumi abi nepieciešami priekš vienas funkcionalitātes: 
 kad atvērts pārlūks, programma pagaida, līdz viņa var iegūt kādu iepriekš iestatītu elementu (manā gadījumā to mājaslapas sadaļu, kurā atrodas filmu lodziņi). Kad šis elements ir iegūts, programma turpinās darbību līdz iegūta visa nepieciešamā informācija, tad aizvērs pārlūku. Papildus arī esmu iestatījis laika sprīdi (20 sekundes), pēc kurām programma apstādinās darbību, ja netiks atgriezts elements (tas var notikt, ja, piemēram, tika nomainīta mājaslapas struktūra, vai ja interneta savienojums ir pietiekami vājš, ka šajā noklusējuma laika sprīdī nepaspēja ielādēt mājaslapas elementus). Šis ir daudz ērtāk, nekā manuāli palēnināt programmu, jo tas ļaus programmai izpildīties tik ātri, cik jūsu dators atļauj.
 
 ## programmas izmantošanas metodes
 Šī programma būtu vispiemērotākā cilvēkiem, kuri, kaut kādu iemeslu dēļ, nevēlās pasūtīt filmas biļetes interneta vietnēs, jo tā ļauj apskatīt kādas filmas tiks rādītas tajā laika sprīdī, kurā lietotājs vēlētos apmeklēt kinoteātri. Šādi lietotājam, kurš zina, kad aptuveni apmeklēs kinoteātri, nebūtu manuāli jāiet cauri desmitiem ierakstiem filmu sarakstā, līdz nonāktu pie filmām, kuras varētu apmeklēt.
 
 Programma arī ļauj ātri un ērti apskatīties, cik brīvu sēdvietu vēl ir palikušas zālē, ja lietotājs zina, kad tiks rādīta filma, uz kuru vēlās iet.
+
+## izmantotie avoti
+
+* https://www.selenium.dev/documentation/
